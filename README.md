@@ -121,46 +121,6 @@ Each training sample is augmented 8× (4 types × 2 repetitions) to improve robu
 
 ## Results
 
-| Split | Macro F1 |
-|---|---|
-| CV (train, augmented) | *reported during training* |
-| Validation (held-out 20%) | *reported during training* |
-
-*(Update this table after running the pipeline)*
-
----
-
-## Requirements
-
-```
-librosa
-numpy
-pandas
-scikit-learn
-scipy
-matplotlib
-tqdm
-joblib
-gdown
-```
-
-Install all with:
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## Reproducibility
-
-- Random seed fixed at `42` throughout (train/test split, cross-validation, Random Forest)
-- All augmentation parameters are logged in `src/augmentation.py`
-- Feature vector dimension is deterministic given the same audio input
-
----
-
-## Classification Report
 
 | label            | precision | recall | f1-score | support |
 |------------------|-----------|--------|----------|---------|
@@ -219,6 +179,39 @@ pip install -r requirements.txt
 | weighted avg     | 0.67      | 0.64   | 0.62     | 240     |
 
 Macro-F1: 0.6198997668997669
+
+---
+
+## Requirements
+
+```
+librosa
+numpy
+pandas
+scikit-learn
+scipy
+matplotlib
+tqdm
+joblib
+gdown
+```
+
+Install all with:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Reproducibility
+
+- Random seed fixed at `42` throughout (train/test split, cross-validation, Random Forest)
+- All augmentation parameters are logged in `src/augmentation.py`
+- Feature vector dimension is deterministic given the same audio input
+
+---
+
 
 ## Team
 
