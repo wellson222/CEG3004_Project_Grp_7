@@ -162,62 +162,62 @@ pip install -r requirements.txt
 
 ## Classification Report
 
-                  precision    recall  f1-score   support
+| precision        | recall | f1-score | support |     |
+|------------------|--------|----------|---------|-----|
+| airplane         | 0.60   | 0.60     | 0.60    | 5   |
+| breathing        | 0.50   | 0.40     | 0.44    | 5   |
+| brushing_teeth   | 1.00   | 1.00     | 1.00    | 5   |
+| can_opening      | 1.00   | 1.00     | 1.00    | 5   |
+| car_horn         | 0.50   | 0.20     | 0.29    | 5   |
+| cat              | 1.00   | 0.20     | 0.33    | 5   |
+| chainsaw         | 0.17   | 0.20     | 0.18    | 5   |
+| chirping_birds   | 0.57   | 0.80     | 0.67    | 5   |
+| church_bells     | 1.00   | 0.80     | 0.89    | 5   |
+| clapping         | 0.80   | 0.80     | 0.80    | 5   |
+| clock_alarm      | 1.00   | 0.60     | 0.75    | 5   |
+| clock_tick       | 0.00   | 0.00     | 0.00    | 5   |
+| coughing         | 0.30   | 0.60     | 0.40    | 5   |
+| cow              | 0.44   | 1.00     | 0.62    | 4   |
+| crackling_fire   | 0.80   | 0.80     | 0.80    | 5   |
+| crickets         | 1.00   | 0.60     | 0.75    | 5   |
+| crow             | 1.00   | 0.60     | 0.75    | 5   |
+| crying_baby      | 0.40   | 1.00     | 0.57    | 4   |
+| dog              | 0.75   | 0.60     | 0.67    | 5   |
+| door_wood_creaks | 1.00   | 0.25     | 0.40    | 4   |
+| door_wood_knock  | 0.43   | 0.60     | 0.50    | 5   |
+| drinking_sipping | 0.75   | 0.60     | 0.67    | 5   |
+| engine           | 0.00   | 0.00     | 0.00    | 5   |
+| fireworks        | 0.75   | 0.60     | 0.67    | 5   |
+| footsteps        | 0.80   | 0.80     | 0.80    | 5   |
+| frog             | 1.00   | 1.00     | 1.00    | 4   |
+| glass_breaking   | 0.75   | 0.75     | 0.75    | 4   |
+| hand_saw         | 0.62   | 1.00     | 0.77    | 5   |
+| helicopter       | 0.50   | 0.40     | 0.44    | 5   |
+| hen              | 0.00   | 0.00     | 0.00    | 5   |
+| insects          | 0.75   | 0.75     | 0.75    | 4   |
+| keyboard_typing  | 0.50   | 0.80     | 0.62    | 5   |
+| laughing         | 0.20   | 0.25     | 0.22    | 4   |
+| mouse_click      | 1.00   | 0.40     | 0.57    | 5   |
+| pig              | 0.71   | 1.00     | 0.83    | 5   |
+| pouring_water    | 0.71   | 1.00     | 0.83    | 5   |
+| rain             | 0.62   | 1.00     | 0.77    | 5   |
+| rooster          | 0.57   | 0.80     | 0.67    | 5   |
+| sea_waves        | 0.83   | 1.00     | 0.91    | 5   |
+| sheep            | 1.00   | 0.75     | 0.86    | 4   |
+| siren            | 0.83   | 1.00     | 0.91    | 5   |
+| sneezing         | 0.60   | 0.60     | 0.60    | 5   |
+| snoring          | 0.50   | 0.40     | 0.44    | 5   |
+| thunderstorm     | 0.83   | 1.00     | 0.91    | 5   |
+| toilet_flush     | 0.38   | 1.00     | 0.56    | 5   |
+| train            | 0.80   | 1.00     | 0.89    | 4   |
+| vacuum_cleaner   | 1.00   | 0.40     | 0.57    | 5   |
+| washing_machine  | 1.00   | 0.40     | 0.57    | 5   |
+| water_drops      | 0.67   | 0.50     | 0.57    | 4   |
+| wind             | 0.50   | 0.40     | 0.44    | 5   |
 
-        airplane       0.60      0.60      0.60         5
-       breathing       0.50      0.40      0.44         5
-  brushing_teeth       1.00      1.00      1.00         5
-     can_opening       1.00      1.00      1.00         5
-        car_horn       0.50      0.20      0.29         5
-             cat       1.00      0.20      0.33         5
-        chainsaw       0.17      0.20      0.18         5
-  chirping_birds       0.57      0.80      0.67         5
-    church_bells       1.00      0.80      0.89         5
-        clapping       0.80      0.80      0.80         5
-     clock_alarm       1.00      0.60      0.75         5
-      clock_tick       0.00      0.00      0.00         5
-        coughing       0.30      0.60      0.40         5
-             cow       0.44      1.00      0.62         4
-  crackling_fire       0.80      0.80      0.80         5
-        crickets       1.00      0.60      0.75         5
-            crow       1.00      0.60      0.75         5
-     crying_baby       0.40      1.00      0.57         4
-             dog       0.75      0.60      0.67         5
-door_wood_creaks       1.00      0.25      0.40         4
- door_wood_knock       0.43      0.60      0.50         5
-drinking_sipping       0.75      0.60      0.67         5
-          engine       0.00      0.00      0.00         5
-       fireworks       0.75      0.60      0.67         5
-       footsteps       0.80      0.80      0.80         5
-            frog       1.00      1.00      1.00         4
-  glass_breaking       0.75      0.75      0.75         4
-        hand_saw       0.62      1.00      0.77         5
-      helicopter       0.50      0.40      0.44         5
-             hen       0.00      0.00      0.00         5
-         insects       0.75      0.75      0.75         4
- keyboard_typing       0.50      0.80      0.62         5
-        laughing       0.20      0.25      0.22         4
-     mouse_click       1.00      0.40      0.57         5
-             pig       0.71      1.00      0.83         5
-   pouring_water       0.71      1.00      0.83         5
-            rain       0.62      1.00      0.77         5
-         rooster       0.57      0.80      0.67         5
-       sea_waves       0.83      1.00      0.91         5
-           sheep       1.00      0.75      0.86         4
-           siren       0.83      1.00      0.91         5
-        sneezing       0.60      0.60      0.60         5
-         snoring       0.50      0.40      0.44         5
-    thunderstorm       0.83      1.00      0.91         5
-    toilet_flush       0.38      1.00      0.56         5
-           train       0.80      1.00      0.89         4
-  vacuum_cleaner       1.00      0.40      0.57         5
- washing_machine       1.00      0.40      0.57         5
-     water_drops       0.67      0.50      0.57         4
-            wind       0.50      0.40      0.44         5
-
-        accuracy                           0.64       240
-       macro avg       0.67      0.65      0.62       240
-    weighted avg       0.67      0.64      0.62       240
+| accuracy         |        |          | 0.64    | 240 |
+| macro avg        | 0.67   | 0.65     | 0.62    | 240 |
+| weighted avg     | 0.67   | 0.64     | 0.62    | 240 |
 
 Macro-F1: 0.6198997668997669
 
