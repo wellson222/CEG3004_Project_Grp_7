@@ -203,7 +203,9 @@ Removing bandpass filtering *improved* performance, suggesting it may introduce 
 ### Per-Class Performance
 
 Final model validation macro-F1: **0.6349** across 50 classes. Performance varied substantially by sound category. Highly distinctive sounds achieved perfect classification — `brushing_teeth`, `can_opening`, `frog`, and `thunderstorm` all scored F1 = 1.0. The hardest classes were `hen`, `engine`, and `laughing` (F1 = 0.0), likely due to spectral overlap with acoustically similar categories. The most frequent confusions were `chainsaw → toilet_flush` (4 errors) and several pairs involving impulsive or broadband sounds such as `car_horn`, `engine`, and `mouse_click`.
+
 ---
+
 ## Requirements
 
 ```
@@ -218,13 +220,6 @@ joblib
 gdown
 ```
 
-Install all with:
-
-```bash
-pip install -r requirements.txt
-```
-
----
 
 ## Reproducibility
 
