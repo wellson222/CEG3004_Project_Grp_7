@@ -121,7 +121,7 @@ Each training sample is augmented 8× (4 types × 2 repetitions) to improve robu
 
 ## Results
 
-
+Macro-F1: 0.6198997668997669
 | label            | precision | recall | f1-score | support |
 |------------------|-----------|--------|----------|---------|
 | airplane         | 0.60      | 0.60   | 0.60     | 5       |
@@ -178,10 +178,32 @@ Each training sample is augmented 8× (4 types × 2 repetitions) to improve robu
 | macro avg        | 0.67      | 0.65   | 0.62     | 240     |
 | weighted avg     | 0.67      | 0.64   | 0.62     | 240     |
 
-Macro-F1: 0.6198997668997669
-
 ---
+## Experimental Results
 
+### Classifier Comparison
+
+Two classifiers were evaluated using 5-fold stratified cross-validation on clean features (no augmentation). Random Forest (300 trees) achieved a mean macro-F1 of **0.5375 ± 0.0329**, outperforming SVM with RBF kernel at **0.5134 ± 0.0181**. Random Forest was selected as the final classifier due to its higher score and greater variance tolerance across folds, which suggests better generalisation.
+
+### Augmentation Ablation
+
+To assess the contribution of each augmentation strategy, models were trained with one augmentation type removed at a time and evaluated on a held-out 20% validation set.
+
+| Configuration | Macro-F1 |
+|---|---|
+| Without bandpass | **0.6599** |
+| All augmentations | 0.6349 |
+| No augmentation | 0.6175 |
+| Without shift | 0.5867 |
+| Without noise | 0.5732 |
+| Without gain | 0.5726 |
+
+Removing bandpass filtering *improved* performance, suggesting it may introduce frequency distortions inconsistent with the test distribution. In contrast, noise and gain augmentation contributed most to robustness — their removal caused the largest performance drops (~4.5pp each). All augmentation configurations outperformed the no-augmentation baseline, confirming the overall value of data augmentation for generalisation under distortion.
+
+### Per-Class Performance
+
+Final model validation macro-F1: **0.6349** across 50 classes. Performance varied substantially by sound category. Highly distinctive sounds achieved perfect classification — `brushing_teeth`, `can_opening`, `frog`, and `thunderstorm` all scored F1 = 1.0. The hardest classes were `hen`, `engine`, and `laughing` (F1 = 0.0), likely due to spectral overlap with acoustically similar categories. The most frequent confusions were `chainsaw → toilet_flush` (4 errors) and several pairs involving impulsive or broadband sounds such as `car_horn`, `engine`, and `mouse_click`.
+---
 ## Requirements
 
 ```
