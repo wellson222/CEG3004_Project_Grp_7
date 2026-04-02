@@ -70,6 +70,12 @@ pip install -r requirements.txt
 python consolidated_code.py
 ```
 
+### 4. Run experiments (optional)
+
+```
+Open corresponding experiment notebook in IDE, run in sequential order (01_eda.ipynb -> 02_feature_analysis.ipynb -> 03_experiments.ipynb)
+```
+
 This will:
 - Download and extract the dataset automatically
 - Extract DSP features from all training audio
