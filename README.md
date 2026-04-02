@@ -214,7 +214,6 @@ pip install -r requirements.txt
 | washing_machine  | 1.00   | 0.40     | 0.57    | 5   |
 | water_drops      | 0.67   | 0.50     | 0.57    | 4   |
 | wind             | 0.50   | 0.40     | 0.44    | 5   |
-
 | accuracy         |        |          | 0.64    | 240 |
 | macro avg        | 0.67   | 0.65     | 0.62    | 240 |
 | weighted avg     | 0.67   | 0.64     | 0.62    | 240 |
